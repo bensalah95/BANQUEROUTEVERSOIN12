@@ -31,24 +31,23 @@
                 <ul class="nav navbar-nav w-100 justify-content-between">
 
                     <ul class="nav nav-tabs">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <li class="nav-item">
                             <a class="nav-link " style ="color:blue; " href="allClient">Voir compte client</a>
-                        </li>
+                        </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <li class="nav-item">
                             <a class="nav-link " style ="color:green;"href="listeDesComptes">Activer/Désactiver carte client</a>
-                        </li>
+                        </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <li class="nav-item">
                             <a class="nav-link " style ="color:green;"href="ModifProfilClient">modifier profil client</a>
-                        </li>
+                        </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <li class="nav-item">
                             <a class="nav-link" style ="color:red;" href="listeDesHistoriques">Historique des comptes clients</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " style ="color:brown;" href="#">Autoriser un découvert</a>
-                        </li>
+                        </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       
                         <li class="nav-item">
                             <a class="nav-link " style ="color:brown;" href="contactConseiller">Contacter client</a>
-                        </li>
+                        </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 
                         <li class="nav-item">

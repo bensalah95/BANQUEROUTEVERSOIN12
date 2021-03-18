@@ -29,22 +29,23 @@
             <ul class="nav navbar-nav w-100 justify-content-between">
 
                 <ul class="nav nav-tabs">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <li class="nav-item">
                         <a class="nav-link " style ="color:blue; " href="InscriptionConseillerServlet">Créer un compte conseiller</a>
-                    </li>
+                    </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <li class="nav-item">
                         <a class="nav-link " style ="color:green;"href="ActiverConseiller">Activer/Désactiver compte conseiller</a>
-                    </li>
+                    </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <li class="nav-item">
                         <a class="nav-link "style ="color:purple;" href="ModifProfilCons">Modifier profil conseiller</a>
-                    </li>
+                    </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <li class="nav-item">
                         <a class="nav-link" style ="color:red;" href="formHistoriqueCons">Historique</a>
-                    </li>
+                    </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <li class="nav-item">
                         <a class="nav-link " style ="color:brown;" href="inscriptionAdmin">Ajouter un compte admin</a>
                     </li>
-
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 
                     <li class="nav-item">
