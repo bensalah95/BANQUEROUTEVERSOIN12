@@ -54,7 +54,7 @@
                     <div class="col-md-6">
                         <div class="card shadow-card">
                             <div class="card-header card-header-back text-center bg-white">
-                                <h5 style ="color:#B1476D;"> Modifier profil conseiller</h5>
+                                <h5 style ="color:#B1476D;"> Modifier profil client</h5>
                             </div>
                             <div>
                                 <div class="card-body">

@@ -35,13 +35,13 @@
                             <a class="nav-link " style ="color:blue; " href="allClient">Voir compte client</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " style ="color:green;"href="#">Activer/Désactiver carte client</a>
+                            <a class="nav-link " style ="color:green;"href="listeDesComptes">Activer/Désactiver carte client</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " style ="color:green;"href="ModifProfilClient">modifier profil client</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" style ="color:red;" href="#">Historique des comptes clients</a>
+                            <a class="nav-link" style ="color:red;" href="listeDesHistoriques">Historique des comptes clients</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " style ="color:brown;" href="#">Autoriser un découvert</a>

@@ -5,21 +5,26 @@
  */
 package fr.esic.model;
 
-public class Historique {
-    private int idOperation;
-    private String TypeOperation;
-    private int montantOperation;
+import java.sql.Date;
 
-    private String dateOperation;
-private Person person;
-public Historique() {
+public class Historique {
+
+    private int idOperation;
+    private String TypeOperations;
+    private int montantOperations;
+    private Date dateOperations;
+    private Person person;
+    private Compte compte;
+
+    public Historique() {
     }
 
-    public Historique(String TypeOperation, int montantOperation, String dateOperation, Person person) {
-        this.TypeOperation = TypeOperation;
-        this.montantOperation = montantOperation;
-        this.dateOperation = dateOperation;
+    public Historique(String TypeOperations, int montantOperations, Date dateOperations, Person person, Compte compte) {
+        this.TypeOperations = TypeOperations;
+        this.montantOperations = montantOperations;
+        this.dateOperations = dateOperations;
         this.person = person;
+        this.compte = compte;
     }
 
     public int getIdOperation() {
@@ -30,28 +35,28 @@ public Historique() {
         this.idOperation = idOperation;
     }
 
-    public String getTypeOperation() {
-        return TypeOperation;
+    public String getTypeOperations() {
+        return TypeOperations;
     }
 
-    public void setTypeOperation(String TypeOperation) {
-        this.TypeOperation = TypeOperation;
+    public void setTypeOperations(String TypeOperations) {
+        this.TypeOperations = TypeOperations;
     }
 
-    public int getMontantOperation() {
-        return montantOperation;
+    public int getMontantOperations() {
+        return montantOperations;
     }
 
-    public void setMontantOperation(int montantOperation) {
-        this.montantOperation = montantOperation;
+    public void setMontantOperations(int montantOperations) {
+        this.montantOperations = montantOperations;
     }
 
-    public String getDateOperation() {
-        return dateOperation;
+    public Date getDateOperations() {
+        return dateOperations;
     }
 
-    public void setDateOperation(String dateOperation) {
-        this.dateOperation = dateOperation;
+    public void setDateOperations(Date dateOperations) {
+        this.dateOperations = dateOperations;
     }
 
     public Person getPerson() {
@@ -61,6 +66,13 @@ public Historique() {
     public void setPerson(Person person) {
         this.person = person;
     }
+    
+    public Compte getCompte() {
+        return compte;
+    }
 
- 
+    public void setCompte(Compte compte) {
+        this.compte = compte;
+    }
+
 }

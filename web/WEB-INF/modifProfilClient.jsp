@@ -44,7 +44,7 @@
 
                                 <br>
   
-            <h5 style ="color:#B14797; ">Listes des conseillers:</h5>
+            <h5 style ="color:#B14797; ">Listes des clients</h5>
             <table class="table">
                 <thead>
                     <tr class="table-info">

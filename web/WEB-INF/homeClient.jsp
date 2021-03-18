@@ -9,7 +9,7 @@
     <body>
           <%@ include file="menuClient.jsp"%>
 
-        
+       
     </body>
 </html>
 
