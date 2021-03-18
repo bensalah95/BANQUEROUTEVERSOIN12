@@ -6,8 +6,10 @@
 package fr.esic.servlet;
 
 import fr.esic.dao.ConseillerDao;
+import fr.esic.dao.HistoriqueConsDao;
 import fr.esic.dao.PersonDao;
 import fr.esic.dao.UserDao;
+import fr.esic.model.HistoriqueCons;
 import fr.esic.model.Person;
 import fr.esic.model.User;
 import java.io.IOException;
@@ -64,8 +66,9 @@ public class FormActiverConseiller extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
     }
-    /**request
-     * Handles the HTTP <code>POST</code> method.
+
+    /**
+     * request Handles the HTTP <code>POST</code> method.
      *
      * @param request servlet request
      * @param response servlet response
@@ -76,9 +79,7 @@ public class FormActiverConseiller extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         //processRequest(request, response);
-        
-        
-        
+
         String userId = request.getParameter("userId");
         int idU = Integer.parseInt(userId);
         String nom = request.getParameter("nom");
@@ -93,20 +94,28 @@ public class FormActiverConseiller extends HttpServlet {
 
         Person p = new Person(nom, prenom);
         try {
-            /* int lastId = UserDao.insertPerson(u);
-            u.setIdPerson(lastId);
-            u.setLogin(login);
-            u.setPassword(password);*/
 
             PersonDao.UpdatePerson(p);
 
-            Person pe = PersonDao.getPersonByNom(nom);
+            //Person pe = PersonDao.getPersonByNom(nom);
+            Person pe = PersonDao.getPersonById(idU);
             //System.out.println("person: " + pe);
 
             User c = new User(login, password, pe, stat);
             c.setId(idU);
             UserDao.changerStatutConseiller(c);
+            
+            String label = null;
+            if (stat == 1) {
+                //label = c.getPerson().getPrenom() + " " + c.getPerson().getNom() + " a activé le compte N° " + userId;
+                label = "Le compte numero" + userId + " a ete active";
+            } else {
+                //label = c.getPerson().getPrenom() + " " + c.getPerson().getNom() + " a desactivé le compte N° " + userId;
+                label = "Le compte numero" + userId + " a ete desactive";
 
+            }
+            HistoriqueConsDao.getInstance().newHistorique(new HistoriqueCons(-1, label, c.getId()));
+            
             /*
             if (c.getStatut() == 0) {//c le nouv statut
                 UserDao.DesactiverConseiller(c);
@@ -115,8 +124,7 @@ public class FormActiverConseiller extends HttpServlet {
                 UserDao.ActiverConseiller(c);
 
             }
-            */
-
+             */
             request.getRequestDispatcher("AccueilServlet").forward(request, response);
         } catch (Exception e) {
             PrintWriter out = response.getWriter();

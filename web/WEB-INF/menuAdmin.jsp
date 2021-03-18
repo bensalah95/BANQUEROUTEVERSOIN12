@@ -39,7 +39,7 @@
                         <a class="nav-link "style ="color:purple;" href="ModifProfilCons">Modifier profil conseiller</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" style ="color:red;" href="#">Historique des opérations sur les comptes conseiller</a>
+                        <a class="nav-link" style ="color:red;" href="formHistoriqueCons">Historique</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " style ="color:brown;" href="inscriptionAdmin">Ajouter un compte admin</a>
